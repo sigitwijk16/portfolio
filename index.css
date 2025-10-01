@@ -1,0 +1,306 @@
+:root {
+    --vintage-blue: #4580b2;
+    --vintage-green: #008c47;
+    --vintage-yellow: #fed03a;
+    --vintage-purple: #552cb7;
+    --vintage-orange: #B1D8B8;
+    --vintage-red: #ec2d01;
+    --royal-blue: #1e4380;
+    --deep-green: #00995e;
+    --amikom-purple: #775aff;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html {
+  -ms-overflow-style: none; 
+}
+
+.red {
+    background-color: var(--vintage-red);
+}
+
+.section-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.green {
+    background-color: var(--vintage-green);
+}
+
+.yellow {
+    background-color: var(--vintage-yellow);
+}
+
+.purple {
+    background-color: var(--vintage-purple);
+}
+
+.amikom-purple {
+    background-color: var(--amikom-purple);
+}
+
+.page {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    position: relative;
+}
+
+.geist-mono-normal {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.geist-mono-semibold {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.geist-mono-bold {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.geist-mono-heavy {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.rounded-button-primary {
+    background-color: #fed03a;
+    border: 2px solid #fed03a;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.rounded-button-secondary {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-item {
+    padding: 8px;
+    border: 2px transparent solid;
+}
+
+.nav-item:hover {
+    padding: 8px;
+    background-color: var(--deep-green);
+    border: 2px var(--deep-green) solid;
+}
+
+header {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 50;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.skill-item {
+    border: 2px white solid;
+    border-radius: 8px;
+    color: white;
+    width: 320px;
+    padding: 10px 20px;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.exp-item {
+    border: 2px white solid;
+    border-radius: 8px;
+    color: white;
+    width: 320px;
+    padding: 10px 20px;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.exp-item-none {
+    border: 2px transparent solid;
+    border-radius: 8px;
+    color: white;
+    width: 320px;
+    padding: 10px 20px;
+}
+
+.exp-title {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.exp-time {
+    font-family: "Geist Mono", monospace;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.skill-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 4px;
+}
+
+.skill-list {
+    font-family: "Geist Mono", monospace;
+    font-size: 1rem;
+    margin-top: 4px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 4px;
+}
+
+.exp-list {
+    font-family: "Geist Mono", monospace;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    display: grid;
+    gap: 4px;
+}
+
+.normal-text {
+    font-family: "Geist Mono", monospace;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.exp-line {
+    height: 100%;
+    width: 2px;
+    background-color: white
+}
+
+.section-title {
+    font-size: 2rem;
+    color: white;
+    padding: 8px;
+}
+
+.nav-item.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+.element-bottom-left {
+    bottom: 0;
+    left: 20px;
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    transform: translateY(50%);
+    z-index: 1;
+}
+
+.element-bottom-right {
+    bottom: 0;
+    right: 20px;
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    transform: translateY(52%);
+    z-index: 1;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#experiences {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-parallax {
+  position: sticky;
+  top: 97px;
+  height: calc(100vh - 97px);
+  overflow-y: auto;
+  width: 100%;
+}

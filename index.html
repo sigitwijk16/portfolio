@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigit Wijonarko | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        :root {
+            --vintage-blue: #4580b2;
+            --vintage-green: #00995e;
+            --vintage-yellow: #fed03a;
+            --vintage-purple: #552cb7;
+            --vintage-orange: #B1D8B8;
+            --vintage-red: #e63c23;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .red {
+            background-color: var(--vintage-red);
+        }
+
+        .section-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .full-screen {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .green {
+            background-color: #3c8242;
+        }
+
+        .yellow {
+            background-color: var(--vintage-yellow);
+        }
+
+        .purple {
+            background-color: var(--vintage-purple);
+        }
+
+        .page {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 3rem;
+        }
+
+        .geist-mono-normal {
+            font-family: "Geist Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .geist-mono-semibold {
+            font-family: "Geist Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .geist-mono-bold {
+            font-family: "Geist Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .geist-mono-heavy {
+            font-family: "Geist Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .rounded-button-primary {
+            background-color: #fed03a;
+            border: 2px solid #fed03a;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .rounded-button-secondary {
+            border: 2px white solid;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .nav-item {
+            padding: 8px;
+            border: 2px transparent solid;
+        }
+
+        .nav-item:hover {
+            padding: 8px;
+            background-color: var(--vintage-green);
+            border: 2px var(--vintage-green) solid;
+        }
+
+        header {
+            top: 0;
+            right: 0;
+            left: 0;
+            position: fixed;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .skill-item {
+            border: 2px white solid;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-family: "Geist Mono", monospace;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .nav-item.active {
+            color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="red">
+    <header>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; margin-left: auto; margin-right: auto; max-width: 72rem;">
+            <div class="geist-mono-normal"
+                style="display: flex; align-items: center; justify-content: center; gap: 2px;">
+                <!-- <p class="yellow" style="color: white;">Sigit</p> -->
+                <a href="/">
+                    <p class="yellow" style="padding: 10px;">Sigit Wijonarko</p>
+            </div>
+            </a>
+            <div class="geist-mono-normal" style="display: flex; gap: 24px; color: white;">
+                <a class="nav-item" href="#about">About</a>
+                <a class="nav-item" href="#skills">Skills</a>
+                <a class="nav-item" href="#">Experience</a>
+                <a class="nav-item" href="#">Projects</a>
+                <a class="nav-item" href="#">Education</a>
+                <a class="nav-item" href="#">Certificates</a>
+                <a class="nav-item" href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="section-container">
+        <section id="home" class="page red geist-mono-bold" style="font-size: 4rem;">
+            <div style="bottom: -10; left: 0; position: absolute;">
+                <img src="./star.png" width="200" height="200" alt="">
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+                <h1 style="color: white;">Hi, I'm</h1>
+                <h1 class="yellow" style="padding: 8px;">Sigit Wijonarko</h1>
+            </div>
+            <p class="geist-mono-normal" style="font-size: 1.25rem; color: white; margin-top: 12px;">
+                Software Developer | Android Developer | Web Developer
+            </p>
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 24px;">
+                <a href="#" class="rounded-button-primary">Get in touch</a>
+                <a href="#" class="rounded-button-secondary">View projects</a>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 24px;">
+                <a href="https://github.com/sigitwijk16" style="width: 40px; height: fit-content; padding: 2px;">
+                    <img src="https://img.icons8.com/material-outlined/96/FFFFFF/github.png" alt="github" />
+                </a>
+                <a href="https://www.linkedin.com/in/sigit-wijonarko"
+                    style="width: 44px; height: fit-content; padding: 4px;">
+                    <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/linkedin.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section id="about" class="page green">
+            <div style="gap: 20px;">
+                <h1 class="geist-mono-semibold" style="font-size: 2rem; color: white;">Skill</h1>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                    <div class="skill-item">
+                        <h2 style="font-size: 2rem;">Android</h2>
+                    </div>
+                    <div class="skill-item">Android</div>
+                    <div class="skill-item">Android</div>
+                    <div class="skill-item">Android</div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="page purple">
+            <div class="geist-mono-bold">
+                <h1 style="font-size: 4rem; color: white;">My skills...</h1>
+            </div>
+        </section>
+        <section id="experiences" class="page red">
+            <div class="geist-mono-bold">
+                <h1 style="font-size: 4rem; color: white;">Experiences...</h1>
+            </div>
+        </section>
+        <section class="page red">
+            <div class="geist-mono-bold">
+                <h1 style="font-size: 4rem; color: white;">Experiences...</h1>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>

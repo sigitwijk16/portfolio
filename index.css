@@ -86,6 +86,7 @@ header {
 .section-container {
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
@@ -106,6 +107,10 @@ header {
     border-radius: 10px;
     padding: 10px;
     font-size: 1rem;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .rounded-button-secondary {
@@ -114,6 +119,10 @@ header {
     padding: 10px;
     font-size: 1rem;
     color: white;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nav-item {
@@ -131,7 +140,8 @@ header {
     border: 2px white solid;
     border-radius: 8px;
     color: white;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     padding: 10px 20px;
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -142,7 +152,7 @@ header {
     border: 2px white solid;
     border-radius: 8px;
     color: white;
-    max-width: 720px; 
+    max-width: 720px;
     padding: 20px;
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -150,19 +160,13 @@ header {
 }
 
 
-.exp-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-}
 
 .exp-item {
     border: 2px white solid;
     border-radius: 8px;
     color: white;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     padding: 10px 20px;
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -264,6 +268,7 @@ header {
 
 .logo {
     padding: 12px;
+    font-size: 1rem;
 }
 
 .normal-text {
@@ -330,6 +335,8 @@ header {
 .education-card {
     border: 2px white solid; 
     border-radius: 8px; 
+    width: 100%;
+    max-width: 320px;
     color: white; 
     padding: 20px; 
     display: flex; 
@@ -350,12 +357,6 @@ a:active {
   text-decoration: none;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
 #experiences {
   min-height: 100vh;
   scroll-snap-align: start;
@@ -364,10 +365,177 @@ a:active {
   flex-direction: column;
 }
 
+.name-banner {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: "Geist Mono", monospace;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    margin-block: 0px;
+}
+
+.hi {
+    color: white;
+    margin: 0;          
+    margin-block-start: 0;
+    margin-block-end: 0;  
+}
+
 .exp-parallax {
   position: sticky;
   top: 97px;
   height: calc(100vh - 97px);
   overflow-y: auto;
   width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--vintage-purple);
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 12px 40px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px !important;
+    text-align: center;
+    white-space: normal;
+    word-break: keep-all; 
+}
+
+.name-text {
+    padding: 8px;
+    background-color: var(--vintage-yellow);
+    display: inline-flex;
+    align-items: center;
+    margin: 0;          
+    margin-block-start: 0;
+    margin-block-end: 0;  
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .name-banner {
+    font-size: 1rem;
+    font-family: "Geist Mono", monospace;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name-text {
+    margin-top: 8px !important;   
+    margin-block-start: 0;
+    margin-block-end: 0;  
+  }
+
+  .subtitle {
+    margin-top: 10px !important;
+    font-size: 1rem;
+    max-width: 90%; 
+    margin: 0 auto;
+  }
+
+  .about-container {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hi {
+    margin: 0;          
+    margin-block-start: 0;
+    margin-block-end: 0;  
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-container {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item {
+    margin-bottom: 12px;
+  }
+
+  .exp-item-none, .exp-line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    font-size: 1.5rem;
+    padding: 16px;
+  }
+
+  .element-bottom-left,
+  .element-bottom-right,
+  .element-bottom-left-rotate {
+    width: 60px;
+    opacity: 0.5;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }

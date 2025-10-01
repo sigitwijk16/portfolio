@@ -516,13 +516,25 @@ a:active {
   }
 
   .exp-item {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     max-width: 270px;
-    pad: 4x 8px;
+    padding: 4x 8px;
   }
 
-  .skill-item, .education-card {
+  .skill-item {
     max-width: 270px;
+  }
+
+  .education-card {
+    width: 100%;
+    max-width: 278px;
+    padding: 8px 16px;
+  }
+
+  #education .normal-text {
+    font-size: 0.9rem;
+    white-space: normal;
+    word-break: keep-all;
   }
 
   .section-title {

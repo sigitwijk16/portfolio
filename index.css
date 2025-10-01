@@ -409,6 +409,21 @@ a:active {
   color: white;
 }
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -431,20 +446,6 @@ a:active {
   }
 }
 
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.exp-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-}
 
 .subtitle {
     font-size: 1.5rem;

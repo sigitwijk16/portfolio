@@ -29,19 +29,18 @@ html {
   -ms-overflow-style: none; 
 }
 
+header {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 50;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
 .red {
     background-color: var(--vintage-red);
-}
-
-.section-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.full-screen {
-    width: 100vw;
-    height: 100vh;
 }
 
 .green {
@@ -54,21 +53,6 @@ html {
 
 .purple {
     background-color: var(--vintage-purple);
-}
-
-.amikom-purple {
-    background-color: var(--amikom-purple);
-}
-
-.page {
-    min-height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 3rem;
-    position: relative;
 }
 
 .geist-mono-normal {
@@ -99,6 +83,23 @@ html {
     font-style: normal;
 }
 
+.section-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    position: relative;
+}
+
 .rounded-button-primary {
     background-color: #fed03a;
     border: 2px solid #fed03a;
@@ -126,16 +127,6 @@ html {
     border: 2px var(--deep-green) solid;
 }
 
-header {
-    top: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    z-index: 50;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-
 .skill-item {
     border: 2px white solid;
     border-radius: 8px;
@@ -146,6 +137,18 @@ header {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+.about-container {
+    border: 2px white solid;
+    border-radius: 8px;
+    color: white;
+    max-width: 720px; 
+    padding: 20px;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 
 .exp-container {
     display: grid;
@@ -183,6 +186,15 @@ header {
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 72rem;
 }
 
 .exp-time {
@@ -228,10 +240,37 @@ header {
     gap: 4px;
 }
 
+.button-group {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 24px; 
+    font-weight: 400;
+}
+
+.button-group-nogap {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px; 
+    font-weight: 400;
+}
+
+.image-button {
+    display: flex; 
+    align-items: center;
+}
+
+.logo {
+    padding: 12px;
+}
+
 .normal-text {
     font-family: "Geist Mono", monospace;
     font-size: 1rem;
     font-optical-sizing: auto;
+    text-align: justify;
     font-style: normal;
     font-weight: 400;
     margin-top: 8px;
@@ -248,6 +287,10 @@ header {
     font-size: 2rem;
     color: white;
     padding: 8px;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .nav-item.active {
@@ -261,18 +304,42 @@ header {
     position: absolute;
     width: 300px;
     height: fit-content;
-    transform: translateY(50%);
     z-index: 1;
 }
 
-.element-bottom-right {
+.element-bottom-left-rotate {
     bottom: 0;
-    right: 20px;
+    left: 20px;
     position: absolute;
     width: 300px;
     height: fit-content;
-    transform: translateY(52%);
     z-index: 1;
+    transform: rotate(10deg);
+}
+
+.element-bottom-right {
+    right: 20px;
+    bottom: 30px;
+    position: absolute;
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    z-index: 1;
+}
+
+.education-card {
+    border: 2px white solid; 
+    border-radius: 8px; 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0px 10px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 a:link,

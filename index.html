@@ -13,20 +13,14 @@
 
 <body class="red">
     <header>
-        <div
-            style="display: flex; justify-content: space-between; align-items: center; margin-left: auto; margin-right: auto; max-width: 72rem;">
-            <div class="geist-mono-normal"
-                style="display: flex; align-items: center; justify-content: center; gap: 2px;">
-                <!-- <p class="yellow" style="color: white;">Sigit</p> -->
-                <a href="#home">
-                    <p class="yellow" style="padding: 10px;">Sigit Wijonarko</p>
-            </div>
+        <div class="navbar">
+            <a href="#home">
+                <p class="yellow normal-text logo">Sigit Wijonarko</p>
             </a>
             <div class="geist-mono-normal" style="display: flex; gap: 24px; color: white;">
                 <a class="nav-item" href="#about">About</a>
                 <a class="nav-item" href="#skills">Skills</a>
                 <a class="nav-item" href="#experiences">Experience</a>
-                <!-- <a class="nav-item" href="#">Projects</a> -->
                 <a class="nav-item" href="#education">Education</a>
                 <a class="nav-item" href="#">Contact</a>
             </div>
@@ -34,7 +28,7 @@
     </header>
     <div class="section-container">
         <section id="home" class="page red geist-mono-bold" style="font-size: 4rem;">
-            <div class="element-bottom-left" style="transform: translateY(0%);">
+            <div class="element-bottom-left">
                 <img src="./star.png" width="300" alt="">
             </div>
             <div style="display: flex; gap: 20px; align-items: center; justify-content: center; font-size: 2rem;">
@@ -44,31 +38,27 @@
             <p class="geist-mono-normal" style="font-size: 1.25rem; color: white; margin-top: 20px;">
                 Software Developer | Android Developer | Web Developer
             </p>
-            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 24px; font-weight: 400;">
+            <div class="button-group">
                 <a href="#" class="rounded-button-primary">Get in touch</a>
-                <a href="https://github.com/sigitwijk16?tab=repositories" class="rounded-button-secondary" style="color: white;">View projects</a>
+                <a href="https://github.com/sigitwijk16?tab=repositories" class="rounded-button-secondary"
+                    style="color: white;">View projects</a>
             </div>
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: 24px;">
-                <a href="https://github.com/sigitwijk16" style="padding: 4px; display: flex; align-items: center;">
-                    <img src="https://img.icons8.com/material-outlined/96/FFFFFF/github.png" style="width: fit-content;"
-                        height="38" alt="github" />
+            <div class="button-group-nogap">
+                <a href="https://github.com/sigitwijk16" class="image-button">
+                    <img src="https://img.icons8.com/material-outlined/96/FFFFFF/github.png" height="38" alt="github" />
                 </a>
-                <a href="https://www.linkedin.com/in/sigit-wijonarko"
-                    style="padding: 4px; display: flex; align-items: center;">
-                    <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/linkedin.png" style="width: fit-content;"
-                        height="40" alt="">
+                <a href="https://www.linkedin.com/in/sigit-wijonarko" class="image-button">
+                    <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/linkedin.png" height="40" alt="">
                 </a>
             </div>
         </section>
         <section id="about" class="page purple">
-            <div class="element-bottom-right" style="transform: translateY(-10%);">
+            <div class="element-bottom-right">
                 <img src="./star2.png" width="300" alt="">
             </div>
-            <div class="geist-mono-semibold">
-                <h2 class="section-title">About</h2>
-            </div>
-            <div class="skill-item" style="width: 720px; padding: 20px;">
-                <p class="skill-list" style="padding: 0; text-align: justify; font-weight: 400">
+            <h2 class="section-title">About</h2>
+            <div class="about-container">
+                <p class="normal-text">
                     Programmer lulusan Universitas Amikom Yogyakarta dengan pengalaman lebih dari satu tahun di bidang
                     Android Development dan Web Development dan terlibat dalam
                     fase penuh SDLC. Terbiasa membangun aplikasi Android menggunakan Kotlin dan XML Views, serta
@@ -84,35 +74,26 @@
             </div>
         </section>
         <section id="skills" class="page green">
-            <div class="element-bottom-left" style="transform: rotate(10deg); left: 20px; bottom: 0; position: absolute; transform: translateY(0%);">
+            <div class="element-bottom-left-rotate">
                 <img src="./flower.png" width="250" alt="">
             </div>
-            <div class="geist-mono-semibold">
-                <h2 class="section-title">Skills</h2>
-            </div>
+            <h2 class="section-title">Skills</h2>
             <div id="grid-container" class="grid-container">
             </div>
         </section>
         <section id="experiences" class="page purple">
-            <div style="right: 20px; bottom: 30px; position: absolute;">
+            <div class="element-bottom-right">
                 <img src="./star3.png" width="300" alt="">
             </div>
             <div class="exp-parallax">
-                <div class="geist-mono-semibold">
-                    <h2 class="section-title" style="margin-top: 0; text-align: center;">Experience</h2>
-                </div>
+                <h2 class="section-title text-center">Experience</h2>
                 <div id="exp-grid" class="exp-container">
                 </div>
             </div>
         </section>
         <section id="education" class="page red">
-            <div class="geist-mono-semibold">
-                <h2 class="section-title">Education</h2>
-            </div>
-            <div style="border: 2px white solid; border-radius: 8px; color: white; padding: 20px; display: flex; justify-content: center; align-items: center; gap: 0px 10px;">
-                <!-- <div style="height: 200px; width: fit-content; transform: translateY(-5%);">
-                    <img src="./toga2.png" height="200" alt="">
-                </div> -->
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
                 <div>
                     <h2 class="exp-title">Universitas Amikom Yogyakarta</h2>
                     <p class="normal-text">2021 - 2025</p>
@@ -120,7 +101,6 @@
                     <p class="normal-text">GPA: 3.86</p>
                 </div>
             </div>
-
         </section>
     </div>
 

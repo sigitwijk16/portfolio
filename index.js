@@ -162,7 +162,7 @@ function populateExperience(expArr) {
     expTime.textContent = exp.time;
 
     const expList = document.createElement("ul");
-    expList.classList.add("exp-list");
+    expList.classList.add("normal-text");
 
     exp.details.forEach((item) => {
       const newList = document.createElement("li");

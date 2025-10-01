@@ -233,15 +233,13 @@ header {
 .exp-list {
     font-family: "Geist Mono", monospace;
     font-size: 1rem;
+    margin-top: 4px;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
     list-style-type: disc;
     padding-left: 20px;
-    margin-top: 8px;
     margin-bottom: 4px;
-    display: grid;
-    gap: 4px;
 }
 
 .button-group {
@@ -444,6 +442,10 @@ a:active {
   .hamburger {
     display: block;
   }
+
+  .exp-list {
+    padding: 0px;
+  }
 }
 
 
@@ -498,7 +500,7 @@ a:active {
 
   .about-container {
     width: 100%;
-    max-width: 320px;
+    max-width: 270px;
   }
 
   .hi {
@@ -515,6 +517,16 @@ a:active {
 
   .exp-item {
     margin-bottom: 12px;
+    max-width: 270px;
+    pad: 4x 8px;
+  }
+
+  .skill-item, .education-card {
+    max-width: 270px;
+  }
+
+  .section-title {
+    margin-top: 70px !important;
   }
 
   .exp-item-none, .exp-line {
